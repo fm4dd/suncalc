@@ -1,0 +1,10 @@
+prgversion: 1.2
+prgrundate: Sat Jul 27 2019
+start-date: 20190728
+locationlg: 139.628999
+locationla: 35.610381
+locationtz: 9.000000
+mag-declin: -7.583000
+dayfiles-#: 1
+daybinsize: 19 Bytes
+srsbinsize: 14 Bytes
