@@ -7,7 +7,7 @@ fm@ubu1804:~/suncalc$ ./suncalc
 No arguments, creating dataset with program defaults.
 See ./suncalc -h for further usage.
 Created new output folder [./tracker-data]
-Create dataset file   [./tracker-data/dset.txt]
+Create dataset file [./tracker-data/dset.txt]
 Create srs bin file [./tracker-data/srs-2019.bin]
 Create srs csv file [./tracker-data/srs-2019.csv]
 Create day csv file [./tracker-data/20190728.csv]
@@ -19,7 +19,7 @@ Create day bin file [./tracker-data/20190728.bin]
 fm@ubu1804:~/suncalc$ ./suncalc -h
 suncalc v1.2
 
-Usage: ./suncalc [-x <longitude>] [-y <longitude>] [-t <timezone>] [-i <interval>] [-p period nd|nm|nq|ny|td|tm|tq|ty] [-o outfolder] [-v]
+Usage: ./suncalc [-x <longitude>] [-y <latitude>] [-t <timezone>] [-i <interval>] [-p period nd|nm|nq|ny|td|tm|tq|ty] [-o outfolder] [-v]
 
 Command line parameters have the following format:
    -x   location longitude, Example: -x 139.628999 (default)

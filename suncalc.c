@@ -111,7 +111,7 @@ struct drecord {
  * print_usage() prints the programs commandline instructions.  *
  * ------------------------------------------------------------ */
 void usage() {
-   static char const usage[] = "Usage: ./suncalc [-x <longitude>] [-y <longitude>] [-t <timezone>] [-i <interval>] [-p period nd|nm|nq|ny|td|tm|tq|ty] [-o outfolder] [-v]\n\
+   static char const usage[] = "Usage: ./suncalc [-x <longitude>] [-y <latitude>] [-t <timezone>] [-i <interval>] [-p period nd|nm|nq|ny|td|tm|tq|ty] [-o outfolder] [-v]\n\
 \n\
 Command line parameters have the following format:\n\
    -x   location longitude, Example: -x 139.628999 (default)\n\
@@ -137,7 +137,7 @@ Command line parameters have the following format:\n\
 Usage examples:\n\
 ./suncalc -x 139.628999 -y 35.610381 -t +9 -i 600 -p nd -o ./tracker-data -v\n\n\
 zip -r tracker-data.zip tracker-data\n";
-   printf("%s\n", progver);
+   printf("suncalc v%s\n\n", progver);
    printf(usage);
 }
 
@@ -228,7 +228,7 @@ void write_dsetfile(spa_data spa, int num) {
       printf("Error open %s for writing.\n", fpath);
       exit(-1);
    }
-   else printf("Create dataset file   [%s]\n", fpath);
+   else printf("Create dataset file [%s]\n", fpath);
 
    fprintf(dset, "prgversion: %s\n", progver);
    fprintf(dset, "prgrundate: %s\n", rundate);
