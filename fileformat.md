@@ -15,10 +15,10 @@ the number of data files that were generated (not counting the csv files of equa
 
 ### Specs
 
-File format: ASCII text file with colon-separated key-value record lines
-Record size: keys = 12 chars (including colon). Values = 14 chars max (OLED font max).
-Record count: 10 records
-File size: approx 210 Bytes
+File format: ASCII text file with colon-separated key-value record lines  
+Record size: keys = 12 chars (including colon). Values = 14 chars max (OLED font max)  
+Record count: 10 records  
+File size: approx 210 Bytes  
 
 ### Example File Content
 
@@ -46,11 +46,11 @@ multi-year calculations, one file will be created for each year.
 
 ### Specs
 
-File format: Fixed record length binary file
-Record size: 14 Bytes
-Record count: 365 or 366 (matching the count of days within a year)
-Min File size: min 14 Bytes (1 day data generation)
-Max File size: 5124 Bytes (year with 366 days x 14 Bytes)
+File format: Fixed record length binary file  
+Record size: 14 Bytes  
+Record count: 365 or 366 (matching the count of days within a year)  
+Min File size: min 14 Bytes (1 day data generation)  
+Max File size: 5124 Bytes (year with 366 days x 14 Bytes)  
 
 ### Record Description
 
@@ -82,10 +82,10 @@ one record for each minute of the day.
 
 ### Specs
 
-File format: Fixed record length binary file
-Record size: 19 Bytes
-Record count: depending on time interval set, default 1440 records (1440 minutes in one day)
-Max File size: 27360 Bytes (19 Bytes x 1440 records)
+File format: Fixed record length binary file  
+Record size: 19 Bytes  
+Record count: depending on time interval set, default 1440 records (1440 minutes in one day)  
+Max File size: 27360 Bytes (19 Bytes x 1440 records)  
 
 ### Record Description
 
