@@ -1,7 +1,7 @@
 # Suncalc File Format Specification
 
-Below is the file spec information for the data failes that are read by Suntracker 2
-revision 2 and Suntracker 2 revision 3. Initially I thought I can generate CSV files,
+Below is the file spec design I created for the data files that are read by Suntracker 2
+revision 2 and Suntracker 2 revision 3 devices. Initially I thought I can generate CSV files,
 but it turns out reading strings is a extra burden on the Arduino, resulting in too
 big of a delay. I switched to binary files instead which get read much faster and have
 less overhead. However this means the binary file needs to match exactly, down to each single
