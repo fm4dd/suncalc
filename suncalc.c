@@ -62,7 +62,7 @@
 int verbose = 0;
 char progver[] = "1.2";              // suncalc program version
 char period[3] = "nd";               // default calculation period
-char rundate[256] = "";              // program run date
+char rundate[20] = "";               // program run date
 char outdir[256] = "./tracker-data"; // default output folder
 char dsetfile[] = "dset.txt";        // dataset parameter information file
 char daycfile[20] = "";              // daily csv dataset file <yyyymmdd.csv>
@@ -430,7 +430,7 @@ int main(int argc, char *argv[]) {
    tsnow = time(NULL);
    struct tm *now, start_tm, end_tm, calc_tm, rise_tm, transit_tm, set_tm;
    now = localtime(&tsnow);
-   strftime(rundate, sizeof(rundate), "%a %b %d %Y", now);
+   strftime(rundate, sizeof(rundate), "%a %Y-%m-%d", now);
    if(verbose == 1) printf("Debug: ts [%lld][%s]\n", (long long) tsnow, rundate);
 
    /* ----------------------------------------------------------- *
