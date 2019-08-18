@@ -1,6 +1,6 @@
 # suncalc
 
-This program calculates a dataset of solar positions, to be used with Suntracker 2 devices. Its input is the longitude, latitude and timezone information for a specific geopgrahic location. The set of output files is stored in a subfolder, by default it is going into "./tracker-data". I developed the data file format as binary fixed length for reading with a Arduino-class Microcontroller. The file format is describeda in the [fileformat.md](./fileformat.md) document.
+This program calculates a dataset of solar positions, to be used with Suntracker 2 devices. Its input is the longitude, latitude and timezone information for a specific geopgrahic location. The set of output files is stored in a subfolder, by default it is going into "./tracker-data". I developed the data file format as binary fixed length for reading with a Arduino-class Microcontroller. The file format is described in the [fileformat.md](./fileformat.md) document.
 
 ## Default data creation
 
