@@ -2,6 +2,8 @@
 
 This program calculates a dataset of solar positions, to be used with Suntracker 2 devices. Its input is the longitude, latitude and timezone information for a specific geopgrahic location. The set of output files is stored in a subfolder, by default it is going into "./tracker-data". I developed the data file format as binary fixed length for reading with a Arduino-class Microcontroller. The file format is described in the [fileformat.md](./fileformat.md) document.
 
+After file generation, I copy all files generated under "./tracker-data" to a FAT-formatted microSD card. I am reading the card on the Microcontroller through an SPI-connected card reader. For Suntracker Revision 2 and 3, I am using the Arduino MKR Zero, which comes with a onboard card reader.
+
 ## Default data creation
 
 ```
