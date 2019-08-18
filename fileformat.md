@@ -105,7 +105,7 @@ of the day.
 
 ### Notes on Data Precision
 
-The srs-[yyyy].bin data is rounded to the nearest degree by suncalci, and the data is consumed as-is by
+The srs-[yyyy].bin data is rounded to the nearest degree by suncalc, and the data is consumed as-is by
 the Arduino MKR Zero. The [yyyymmdd].bin daily position data is kept as double with the original precision
  as calculated. It is currently rounded by the Ardino MKR Zero before displayed, or used to calculate
 teh 32 LED position value.
