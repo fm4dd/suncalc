@@ -106,7 +106,7 @@ Max File size: 27360 Bytes (19 Bytes x 1440 records)
 | 2             | 1          | uint8_t   | minute        | The minute of the day            | 0..59 |
 | 3             | 1          | uint8_t   | dflag         | 1=Daytime / 0=Nighttime flag     | 0 or 1 |
 | 4             | 8          | double    | azimuth       | The Azimuth angle at that time   | 0..359 |
-| 1             | 8          | double    | zenith        | The Zenith angle at that time    | 0..180 |
+| 12            | 8          | double    | zenith        | The Zenith angle at that time    | 0..180 |
 
 ### Debug Notes
 
