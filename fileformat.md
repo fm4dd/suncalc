@@ -68,6 +68,17 @@ Max File size: 5124 Bytes (year with 366 days x 14 Bytes)
 | 12            | 1          | uint8_t   | setmin        | The Sunset minute of the day     | 0..59 |
 | 13            | 2          | uint16_t  | setazimuth    | Sun Azimuth angle at sunset      | 0..359 |
 
+### Example
+
+In the file example below, the byte data is shown in decimal format. Note that byte 5-6, 9-10, and 13-14
+ belong together. The data shows day 2019-07-28, sunrise is at 4:46, the sunrise azimuth angle is 66 degrees.
+
+```
+fm@Porthos:~/projects/git/suncalc$ od -N14 -A d -t dC tracker-data/srs-2019.bin
+0000000    7   28    4   46   66    0   11   48   73    0   18   49   38    1
+0000014
+```
+
 ### Debug Notes
 
 suncalc generates the CSV equivalent srs-[yyyy].csv for easy debug purpose.
@@ -75,7 +86,7 @@ The CSV has the same record count as the binary data file.
 
 ## File [yyyymmdd].bin - All sun position angles for one single day
 
-The [yyyymmdd].bin file has a 19-byte long records for the specific day specified in its file name.
+The [yyyymmdd].bin file has 19-byte long records for the specific day specified in its file name.
 The record contains the days hour, minute, and the suns azimuth and zenith angle at that point in time.
 The record count depends on the time interval that was choosen for suncalc. By default, it generates
 one record for each minute of the day.
@@ -108,7 +119,7 @@ of the day.
 The srs-[yyyy].bin data is rounded to the nearest degree by suncalc, and the data is consumed as-is by
 the Arduino MKR Zero. The [yyyymmdd].bin daily position data is kept as double with the original precision
  as calculated. It is currently rounded by the Ardino MKR Zero before displayed, or used to calculate
-teh 32 LED position value.
+the 32 LED position value.
 
 ### Notes on Endianness
 
